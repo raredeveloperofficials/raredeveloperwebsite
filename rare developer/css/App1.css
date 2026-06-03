@@ -1,0 +1,108 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background: linear-gradient(
+  180deg,
+  #121212 0%,
+  #1f1b24 100%
+);
+  min-height: 100vh;
+  
+}
+p{
+  text-indent: 50px;
+}
+ol{
+  list-style-type: upper-alpha;
+  padding-left: 40px;
+}
+header{
+  padding-left: 10px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 1vw;
+  height: 20vh;
+  display: flex;
+  width: 94vw;
+ box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+ overflow: hidden;
+ background: linear-gradient(
+  var(--headdeg),
+  #fff5f5 0%,
+  #ff9aa2 50%,
+  #d62828 100%
+);
+  align-items: center;
+  border-radius: 10px;
+  animation: headerrot 5s infinite;
+}
+.h1-match{
+  font-size: 6vh;
+  font-weight: bold;
+}
+@keyframes textgradmove{
+  to{
+    background-position: 200%;
+  }
+}
+.h2-match{
+  font-size: 5vh;
+  font-weight: bold;
+}
+.h3-match{
+  font-size: 4vh;
+  font-weight: bold;
+}
+.h4-match{
+  font-size: 3vh;
+  font-weight: bold;
+}
+.h5-match{
+  font-size: 2vh;
+  font-weight: bold;
+}
+.h6-match{
+  font-size: 1vh;
+  font-weight: bold;
+}
+.grad{
+  /*grad*/
+  background: linear-gradient(
+  to right,
+  #ffd6ff 0%,
+  #c77dff 25%,
+  #ff4d6d 50%,
+  #c77dff 75%,
+  #ffd6ff 100%
+);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 200% 100%;
+  -webkit-text-fill-color: transparent;
+  animation: textgradmove 2.5s linear infinite;
+}
+@property --headdeg{
+  syntax:"<angle>";
+  inherits:false;
+  initial-value: 0deg;
+}
+@keyframes headerrot{
+  0%{
+    --headdeg: 30deg;
+  }
+  50%{
+    --headdeg: 135deg;
+  }
+  100%{
+    --headdeg: 30deg;
+  }
+}
+.title{
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: .5px black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
