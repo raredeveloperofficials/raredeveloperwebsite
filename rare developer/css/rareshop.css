@@ -1,0 +1,8 @@
+#list{
+  min-height: 70vh;
+  border: 2px solid #bb86fc;
+  border-radius: 50px;
+  margin: 2vw 2vh 2vw 2vh;
+  padding: 30px 30px 30px 30px;
+  overflow: auto;
+}

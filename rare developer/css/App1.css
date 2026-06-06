@@ -8,6 +8,7 @@ body{
   #121212 0%,
   #1f1b24 100%
 );
+
   min-height: 100vh;
   
 }
@@ -69,6 +70,7 @@ header{
 }
 .grad{
   /*grad*/
+  font-family: Courier New,Monospace;
   background: linear-gradient(
   to right,
   #ffd6ff 0%,
@@ -82,6 +84,28 @@ header{
   background-size: 200% 100%;
   -webkit-text-fill-color: transparent;
   animation: textgradmove 2.5s linear infinite;
+}
+button{
+  /*grad*/
+  font-family: Courier New,Monospace;
+  background: linear-gradient(
+  to right,
+  #c77dff 0%,
+  #ff4d6d 25%,
+  #ffd6ff 50%,
+  #ff4d6d 75%,
+  #c77dff 100%
+);
+border:none;
+ border-radius: 20px;
+ padding: 5px 5px 5px 5px;
+ width: 100%;
+  animation: textgradmove 2.5s linear infinite;
+}
+hr{
+  border:none;
+  height: 2px;
+  background-color: #bb86fc;
 }
 @property --headdeg{
   syntax:"<angle>";
